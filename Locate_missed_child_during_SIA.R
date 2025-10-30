@@ -212,8 +212,8 @@ create_settlement_map <- function(
             color = "red", size = 3, shape = 23) +
     coord_sf(xlim = c(bbox["xmin"], bbox["xmax"]), ylim = c(bbox["ymin"], bbox["ymax"])) +
     theme_void() +
-    labs(title = paste0("Missing child during InProcess - ", settlement), 
-         subtitle = ctry) +
+    labs(title = paste0("Missing child during InProcess in the settlement of ", settlement, " - ", ctry), 
+         subtitle = "") +
     theme(
       plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
       plot.subtitle = element_text(hjust = 0.5, size = 12)
